@@ -39,6 +39,19 @@ def get_data():
 get_data() | FF(lambda x, y: x + y) == 3
 ```
 
+Use alias like follow code, you can use `map`/`filter`/`reduce` more conveniently:
+
+```python
+from functools import reduce
+from pipe import F
+
+Filter = F(F, filter)
+Map = F(F, map)
+Reduce = F(F, reduce)
+
+range(100) | Filter(lambda x: x % 2) | Map(lambda x: x * x) | Reduce(lambda x, y: x + y)
+```
+
 ## Set Global
 
 Maybe you don't want to use `from pipe import F` in every file of the entire project, you can use the following code to set it as a global function, just like `min`/`max`/`sum`.
