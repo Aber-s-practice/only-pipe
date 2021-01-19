@@ -22,8 +22,6 @@ class FF(partial):
     """
 
     def __ror__(self, other):
-        if not isinstance(other, tuple):
-            raise TypeError("FF can only accept tuple as parameters")
         return self(*other)
 
 

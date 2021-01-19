@@ -9,7 +9,7 @@ with open("./README.md", "r", encoding="utf8") as file:
 
 setup_kwargs = {
     "name": "only-pipe",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "A non-intrusive Python pipeline.",
     "long_description": long_description,
     "long_description_content_type": "text/markdown",
