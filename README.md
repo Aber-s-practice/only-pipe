@@ -1,8 +1,10 @@
 # Pipe.py
 
-A non-intrusive Python pipeline. 
+A non-intrusive Python pipeline.
 
 There are only pipeline. If you want more functional tools, you should look for another library.
+
+**This code repository has been moved to [Cool](https://github.com/abersheeran/cool), where it is actively maintained and there are more similar tools.**
 
 ## Install
 
